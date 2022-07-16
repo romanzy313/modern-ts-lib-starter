@@ -1,5 +1,5 @@
 {
-  "name": "<LIBNAME>",
+  "name": "<LIB-NAME>",
   "description": "<DESCRIPTION>",
   "version": "0.0.0",
   "main": "./dist/index.js",
@@ -44,7 +44,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/<GITPATH>.git"
+    "url": "https://github.com/<GIT-USERNAME>/<LIB-NAME>.git"
   },
   "author": "<NAME>",
   "files": [

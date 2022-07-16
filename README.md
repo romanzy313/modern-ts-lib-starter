@@ -9,18 +9,16 @@ npm start
 
 ## Whats included
 
-- Jest testing library with watch mode
+- Jest testing with watch mode
 - Bundling to ES and UMD modules
 - Minimal eslint and prettier configuration
-- Separate example folder with vite
+- Example sub project with vite
 - package.json is ready for publishing to npm. Make sure to replace <PLACEHOLDERS>
-- Many basic templates with placeholders: readme, license, bug report, feature request
+- Templates with placeholders: readme, license, bug report, feature request
 
 # Credits
 
 Initial project setup was taken from [peer-lite](https://github.com/skyllo/peer-lite) project. Thank you skyllo!
-
-_delete the _
 
 # <PROJECT-NAME>
 
@@ -31,7 +29,7 @@ Description
 # Installation
 
 ```bash
-npm i <PROJECT-NAME>
+npm i <LIB-NAME>
 ```
 
 # Usage
