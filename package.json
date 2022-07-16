@@ -11,6 +11,7 @@
     "build:watch": "rollup --watch --config rollup.config.ts --configPlugin typescript",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "clean": "rimraf -rf dist/* && rimraf -rf ./*-*.tgz",
     "prebuild": "npm run clean",
     "prepublishOnly": "npm run prettier-format && npm run lint && npm run build",
