@@ -16,11 +16,13 @@ npm start
 - package.json is ready for publishing to npm. Make sure to replace <PLACEHOLDERS>
 - Templates with placeholders: readme, license, bug report, feature request
 
+Replace placeholders such as <LIB-NAME>, <DESCRIPTION>, <AUTHOR>, <GIT-USERNAME>
+
 # Credits
 
 Initial project setup was taken from [peer-lite](https://github.com/skyllo/peer-lite) project. Thank you skyllo!
 
-# <PROJECT-NAME>
+# <LIB-NAME>
 
 Description
 

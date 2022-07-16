@@ -16,7 +16,6 @@
     "prebuild": "npm run clean",
     "prepublishOnly": "npm run prettier-format && npm run lint && npm run build",
     "npm:pack": "npm run build && npm pack",
-    "npm:publish": "npm run build && npm publish",
     "lint": "eslint . --ext .ts",
     "lint:fix": "npm run lint -- --fix",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
@@ -47,7 +46,7 @@
     "type": "git",
     "url": "https://github.com/<GIT-USERNAME>/<LIB-NAME>.git"
   },
-  "author": "<NAME>",
+  "author": "<AUTHOR>",
   "files": [
     "dist",
     "src"

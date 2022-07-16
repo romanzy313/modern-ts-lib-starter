@@ -3,6 +3,8 @@ import swc from 'rollup-plugin-swc';
 import typescript2 from '@rollup/plugin-typescript';
 import typescript from 'typescript';
 
+const externalDependencies: string[] = [];
+
 const isDevelopment = process.env.BUILD === 'development';
 
 const rollupConfig: RollupOptions = {
@@ -11,7 +13,7 @@ const rollupConfig: RollupOptions = {
     {
       file: 'dist/index.js',
       format: 'umd',
-      name: '<LIB-NAME>',
+      name: '<LIB-NAME>PascalCase',
       sourcemap: true,
       interop: false,
     },
@@ -22,6 +24,7 @@ const rollupConfig: RollupOptions = {
       interop: false,
     },
   ],
+  external: externalDependencies,
   plugins: [
     typescript2({
       typescript,
