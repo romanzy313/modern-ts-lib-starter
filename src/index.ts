@@ -1,1 +1,1 @@
-export default class DummyClass {}
+export class DummyClass {}

@@ -1,4 +1,4 @@
-import DummyClass from './index';
+import { DummyClass } from './index';
 
 /**
  * Dummy test

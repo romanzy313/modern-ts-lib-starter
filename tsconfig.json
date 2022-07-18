@@ -6,8 +6,6 @@
     "declarationDir": "types",
     "skipLibCheck": true,
     "sourceMap": true,
-    "strict": true,
-    "noImplicitAny": false,
     "esModuleInterop": true,
     "outDir": "dist",
     "lib": ["esnext", "dom"],
@@ -17,6 +15,15 @@
     "paths": {
       "lib-name": ["src"]
     },
+
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noFallthroughCasesInSwitch": true,
+
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },

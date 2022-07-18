@@ -7,9 +7,9 @@ yarn install
 yarn start
 ```
 
-Create example project with `yarn create vite example`
+Replace placeholders such as <<LIB-NAME>>, <<DESCRIPTION>>, <<AUTHOR>>, <<GIT-USERNAME>>. You can search and replace with regex pattern <<.\*>>
 
-## Whats included
+# Whats included
 
 - Jest testing with watch mode
 - Rollup bunding with SWC to ES and UMD modules (NOTE: not sure if UMD actually works)
@@ -18,7 +18,14 @@ Create example project with `yarn create vite example`
 - package.json is ready for publishing to npm. Make sure to replace placeholders. <<PLACEHOLDERS>>
 - Templates with placeholders: readme, license, bug report, feature request
 
-Replace placeholders such as <<LIB-NAME>>, <<DESCRIPTION>>, <<AUTHOR>>, <<GIT-USERNAME>>. You can search and replace with regex pattern <<.\*>>
+# Create example
+
+run `yarn create vite example` and reference your library with
+
+```typescript
+import { DummyClass } from '../../src';
+console.log(DummyClass);
+```
 
 # Credits
 
@@ -27,6 +34,9 @@ Initial project setup was taken from [peer-lite](https://github.com/skyllo/peer-
 # TODO
 
 - [ ] typedoc generation
+- [ ] ci to keep packages upto date, coverage report
+
+_delete above here to start writing your README_
 
 # <<LIB-NAME>>
 
