@@ -13,15 +13,15 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "test:publish": "yarn test && yarn build && yarn pack",
     "clean": "rimraf -rf dist/* && rimraf -rf ./*-*.tgz",
     "prebuild": "yarn clean",
     "prepublishOnly": "yarn prettier && yarn lint && yarn build",
-    "npm:pack": "yarn build && yarn pack",
+    "format": "yarn prettier && yarn lint",
     "lint": "eslint . --ext .ts --fix",
     "lint:dry": "eslint . --ext .ts",
     "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "prettier:dry": "prettier --config .prettierrc 'src/**/*.ts'",
-    "example:vite": ""
+    "prettier:dry": "prettier --config .prettierrc 'src/**/*.ts'"
   },
   "workspaces": {
     "packages": [
