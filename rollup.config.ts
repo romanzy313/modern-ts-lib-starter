@@ -13,7 +13,7 @@ const rollupConfig: RollupOptions = {
     {
       file: 'dist/index.js',
       format: 'umd',
-      name: '<<LIB-NAME>>PascalCase',
+      name: '<<LIB-NAME>>PascalCase', //TODO this one is problematic
       sourcemap: true,
       interop: false,
     },

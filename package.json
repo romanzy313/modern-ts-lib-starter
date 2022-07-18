@@ -14,13 +14,22 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "clean": "rimraf -rf dist/* && rimraf -rf ./*-*.tgz",
-    "prebuild": "npm run clean",
-    "prepublishOnly": "npm run prettier-format && npm run lint && npm run build",
-    "npm:pack": "npm run build && npm pack",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "npm run lint -- --fix",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "prebuild": "yarn clean",
+    "prepublishOnly": "yarn prettier && yarn lint && yarn build",
+    "npm:pack": "yarn build && yarn pack",
+    "lint": "eslint . --ext .ts --fix",
+    "lint:dry": "eslint . --ext .ts",
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prettier:dry": "prettier --config .prettierrc 'src/**/*.ts'",
+    "example:vite": ""
   },
+  "workspaces": {
+    "packages": [
+      "example",
+      "packages/*"
+    ]
+  },
+  "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.3",
     "@swc/core": "^1.2.215",
