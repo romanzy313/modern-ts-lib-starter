@@ -2,12 +2,12 @@
 
 **Install Dependencies**
 
-```
-npm install
+```bash
+yarn install
 ```
 
 **Run example**
 
-```
-npm start
+```bash
+yarn start
 ```
