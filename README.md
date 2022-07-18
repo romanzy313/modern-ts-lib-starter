@@ -14,8 +14,7 @@ Replace placeholders such as <<LIB-NAME>>, <<DESCRIPTION>>, <<AUTHOR>>, <<GIT-US
 - Jest testing with watch mode
 - Rollup bunding with SWC to ES and UMD modules (NOTE: not sure if UMD actually works)
 - Minimal eslint and prettier configuration
-- Minimal monorepo setup with yarn and lerna
-- package.json is ready for publishing to npm. Make sure to replace placeholders. <<PLACEHOLDERS>>
+- package.json is ready for publishing to npm
 - Templates with placeholders: readme, license, bug report, feature request
 
 # Create example
