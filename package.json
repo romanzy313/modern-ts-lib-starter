@@ -1,6 +1,6 @@
 {
-  "name": "<LIB-NAME>",
-  "description": "<DESCRIPTION>",
+  "name": "<<LIB-NAME>>",
+  "description": "<<DESCRIPTION>>",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
@@ -44,9 +44,9 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/<GIT-USERNAME>/<LIB-NAME>.git"
+    "url": "https://github.com/<<GIT-USERNAME>>/<<LIB-NAME>>.git"
   },
-  "author": "<AUTHOR>",
+  "author": "<<AUTHOR>>",
   "files": [
     "dist",
     "src"
