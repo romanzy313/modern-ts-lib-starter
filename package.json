@@ -1,5 +1,6 @@
 {
-  "name": "<<LIB-NAME>>",
+  "private": true,
+  "name": "LIB-NAME",
   "description": "<<DESCRIPTION>>",
   "version": "0.0.0",
   "main": "./dist/index.js",
@@ -50,12 +51,5 @@
   "files": [
     "dist",
     "src"
-  ],
-  "jest": {
-    "transform": {
-      "^.+\\.(t|j)sx?$": [
-        "@swc/jest"
-      ]
-    }
-  }
+  ]
 }
