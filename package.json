@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "LIB-NAME",
+  "name": "<<LIB-NAME>>",
   "description": "<<DESCRIPTION>>",
   "version": "0.0.0",
   "main": "./dist/index.js",
@@ -15,7 +15,7 @@
     "test:coverage": "jest --coverage",
     "test:publish": "yarn test && yarn build && yarn pack",
     "prebuild": "yarn clean",
-    "prepublishOnly": "yarn prettier && yarn lint && yarn build",
+    "prepublishOnly": "yarn build",
     "clean": "rimraf -rf dist/* && rimraf -rf ./*-*.tgz",
     "format": "yarn prettier && yarn lint",
     "lint": "eslint . --ext .ts --fix",
