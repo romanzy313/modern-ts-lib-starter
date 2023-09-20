@@ -7,6 +7,7 @@ import fs from 'fs/promises';
 import path from 'path';
 
 const dryRun = false;
+const ignore = /.git|node_modules|test-results|playwright-report|dist|types|init-template.mjs/;
 
 const questions = [
   {
@@ -140,8 +141,7 @@ async function main() {
   await crawlAndReplaceStrings(
     {
       folderPath: dirname,
-      ignore:
-        /.git|node_modules|test-results|playwright-report|dist|types|init-template.mjs/,
+      ignore: ignore,
       // dryRun,
     },
     replacements

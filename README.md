@@ -1,9 +1,10 @@
 # Getting started
 
-clone the repo
+clone the repo and detach from 
 ```bash
 git clone https://github.com/romanzy-1612/modern-ts-lib-starter.git PROJECTNAME
 cd PROJECTNAME
+rm -rf ./.git
 ```
 
 customize this template
@@ -19,12 +20,11 @@ pnpm test
 
 # Whats included
 
-- Vite/tsc bundling,
+- Vite/tsc bundling
 - Vitest unit testing
 - Playwright e2e testing
 - Minimal eslint and prettier configuration
-- package.json is ready for publishing to npm
-- Templates with placeholders: readme, license, bug report, feature request, etc
+- Easy templating for customized npm publishable repo
 - Working ? github actions for testing
 
 # Create another example
@@ -34,7 +34,7 @@ Create new vite project and install your library
 ```bash
 pnpm create vite example2
 cd example2
-pnpm i placeholder-lib-name
+pnpm install placeholder-lib-name
 ```
 
 Use your library as folloing:
