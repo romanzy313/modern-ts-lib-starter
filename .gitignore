@@ -4,7 +4,14 @@ node_modules/
 *.log
 .DS_Store
 .vscode
-dist
 .cache
 coverage
 *-*.tgz
+
+dist
+types
+
+test-results
+playwright-report
+playwright/.cache
+
