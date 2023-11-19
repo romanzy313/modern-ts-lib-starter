@@ -45,6 +45,10 @@ import { DummyClass } from 'placeholder-lib-name/src';
 console.log(DummyClass);
 ```
 
+# TODOS
+
+[] Cache playwright deps (https://playwrightsolutions.com/playwright-github-action-to-cache-the-browser-binaries/)
+
 _delete above here to start writing your README_
 
 # placeholder-lib-name

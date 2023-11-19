@@ -48,11 +48,11 @@ importers:
         specifier: ^0.34.4
         version: 0.34.4
 
-  example:
+  examples/example1:
     dependencies:
       placeholder-lib-name:
         specifier: workspace:^
-        version: link:..
+        version: link:../..
     devDependencies:
       typescript:
         specifier: ^5.0.2

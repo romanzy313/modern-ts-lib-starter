@@ -2,19 +2,18 @@
   "name": "placeholder-lib-name",
   "description": "<<DESCRIPTION>>",
   "version": "0.0.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.es.js",
-  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "engines": {
     "node": "18",
     "pnpm": "8"
   },
   "scripts": {
     "dev": "vitest",
-    "build": "pnpm build:vite",
+    "build": "pnpm build:tsc",
     "build:tsc": "tsc",
     "build:vite": "vite build && tsc --declaration --emitDeclarationOnly",
-    "build:watch": "pnpm clean && tsc --watch",
     "test": "vitest run && playwright test",
     "test:watch": "vitest",
     "test:coverage": "vitest --coverage",
