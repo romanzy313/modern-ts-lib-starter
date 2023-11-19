@@ -1,4 +1,4 @@
-import {DummyClass} from "placeholder-lib-name/src";
+import { DummyClass } from 'placeholder-lib-name';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -7,4 +7,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div id="hello">${new DummyClass().sayHi()}</div>
     </p>
   </div>
-`
+`;
